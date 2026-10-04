@@ -1,0 +1,17 @@
+:root{--bg:#f1e3f7;--ink:#3b1f4a;--pink:#ee4f98;--leaf:#2f8a4b;--card:#fff7fb}
+@media (prefers-color-scheme:dark){:root{--bg:#2a1636;--ink:#fbe9f4;--pink:#ff6fb0;--leaf:#6fd08a;--card:#3a2049}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Fredoka',system-ui,sans-serif;min-height:100vh;overflow-x:hidden}
+.wrap{max-width:560px;margin:0 auto;padding:28px 22px 48px;text-align:center;position:relative;z-index:1}
+.hb{font-size:1.25rem;font-weight:500;letter-spacing:.02em;margin:0 0 2px}
+.name{font-family:'Pacifico',cursive;font-size:clamp(3rem,15vw,5rem);line-height:1.1;margin:0;color:var(--pink);transform:rotate(-3deg);display:inline-block}
+.frame{width:min(78vw,340px);aspect-ratio:4/5;margin:26px auto 22px;border-radius:999px 999px 28px 28px;overflow:hidden;border:7px solid var(--card);box-shadow:10px 10px 0 var(--pink);background:var(--card)}
+.frame img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;display:block}
+.msg{background:var(--card);border-radius:22px;padding:20px 22px;font-size:1.1rem;line-height:1.6;border-left:6px solid var(--leaf)}
+.msg p{margin:0 0 .6em}
+.msg p:last-child{margin:0}
+button{margin-top:22px;font:inherit;font-weight:600;font-size:1.05rem;background:var(--pink);color:#fff;border:0;border-radius:999px;padding:13px 28px;cursor:pointer}
+button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.c{position:fixed;top:-20px;width:10px;height:16px;border-radius:2px;animation:fall linear forwards;z-index:0}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+@media (prefers-reduced-motion:reduce){.c{display:none}}
