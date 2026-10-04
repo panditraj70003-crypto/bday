@@ -35,8 +35,8 @@ function App() {
     h("h1", { className: "name" }, "Nunibunti"),
     h("div", { className: "frame" }, h("img", { src: PHOTO, alt: "Nunibunti" })),
     h("div", { className: "msg" },
-      h("p", null, "Wishing you a day full of laughter and everything you love."),
-      h("p", null, "May this year bring you big dreams, good health and lots of happiness and be happy always whatever the condition is , I'm so glad you're my sister!")
+      h("p", null, "Happy birthay to my cute sister! stay blessed, stay happy, stay amazing as always."),
+      h("p", null, "May this year bring you big dreams, good health and lots of happiness , I'm so glad you're my sister!")
     ),
     h("button", { onClick: () => setBurst(n => n + 1) }, "Throw confetti")
   );
